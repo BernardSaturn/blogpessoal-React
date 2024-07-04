@@ -2,33 +2,39 @@ import axios from "axios";
 
 const api = axios.create({
     baseURL: 'https://blogpessoal-1s20.onrender.com'
-})
+});
 
-export const cadastrarUsuario = async (url: string, dados: Object, setDados: Function) => {
-    const resposta = await api.post(url, dados)
-    setDados(resposta.data)
-}
+// Função para cadastrar um usuário
+export const cadastrarUsuario = async (url: string, dados: any, setDados: Function) => {
+    const resposta = await api.post(url, dados); // Faz uma requisição POST para cadastrar um usuário
+    setDados(resposta.data); // Atualiza os dados com a resposta da API
+};
 
-export const login = async (url: string, dados: Object, setDados: Function) => {
-    const resposta = await api.post(url, dados)
-    setDados(resposta.data)
-}
+// Função para realizar login
+export const login = async (url: string, dados: any, setDados: Function) => {
+    const resposta = await api.post(url, dados); // Faz uma requisição POST para realizar login
+    setDados(resposta.data); // Atualiza os dados com a resposta da API
+};
 
-export const buscar = async (url: string, setDados: Function, header: Object) => {
-    const resposta = await api.get(url, header)
-    setDados(resposta.data)
-}
+// Função para buscar dados da API
+export const buscar = async (url: string, setDados: Function, header: any) => {
+    const resposta = await api.get(url, header); // Faz uma requisição GET para buscar dados da API
+    setDados(resposta.data); // Atualiza os dados com a resposta da API
+};
 
-export const cadastrar = async (url: string, dados: Object, setDados: Function, header: Object) => {
-    const resposta = await api.post(url, dados, header)
-    setDados(resposta.data)
-}
+// Função para cadastrar dados na API
+export const cadastrar = async (url: string, dados: any, setDados: Function, header: any) => {
+    const resposta = await api.post(url, dados, header); // Faz uma requisição POST para cadastrar dados na API
+    setDados(resposta.data); // Atualiza os dados com a resposta da API
+};
 
-export const atualizar = async (url: string, dados: Object, setDados: Function, header: Object) => {
-    const resposta = await api.put(url, dados, header)
-    setDados(resposta.data)
-}
+// Função para atualizar dados na API
+export const atualizar = async (url: string, dados: any, setDados: Function, header: any) => {
+    const resposta = await api.put(url, dados, header); // Faz uma requisição PUT para atualizar dados na API
+    setDados(resposta.data); // Atualiza os dados com a resposta da API
+};
 
-export const deletar = async (url: string, header: Object) => {
-    await api.delete(url, header)
-}
+// Função para deletar dados na API
+export const deletar = async (url: string, header: any) => {
+    await api.delete(url, header); // Faz uma requisição DELETE para deletar dados na API
+};

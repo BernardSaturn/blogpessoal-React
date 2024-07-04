@@ -1,4 +1,4 @@
 export default interface Tema {
-    id: number;
-    descricao: string;
+    id: number; // ID do tema
+    descricao: string; // Descrição do tema
 }
