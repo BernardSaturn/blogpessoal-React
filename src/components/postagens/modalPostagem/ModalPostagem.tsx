@@ -1,4 +1,3 @@
-import React from "react"; // Importa a biblioteca React
 import FormularioPostagem from "../formularioPostagem/FormularioPostagem"; // Importa o componente FormularioPostagem
 
 import "reactjs-popup/dist/index.css"; // Importa os estilos padrão do pacote reactjs-popup

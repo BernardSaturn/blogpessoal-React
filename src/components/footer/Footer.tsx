@@ -3,7 +3,7 @@ import {
   InstagramLogo,
   LinkedinLogo,
 } from "@phosphor-icons/react";
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { AuthContext } from "../../contexts/AuthContext";
 
 function Footer() {

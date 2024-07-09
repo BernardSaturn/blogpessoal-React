@@ -1,4 +1,3 @@
-import React from "react"; // Importa a biblioteca React
 import { Link } from "react-router-dom"; // Importa o componente Link do react-router-dom
 import Tema from "../../../models/Tema"; // Importa o modelo Tema
 
